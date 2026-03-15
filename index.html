@@ -3,104 +3,361 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rahul Verma | Pixel Portfolio</title>
+  <title>Rahul Verma</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="container">
 
-  <header class="hero">
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header>
     <h1>Rahul Verma</h1>
-    <p class="subtitle">Software Engineer · ML Systems · Networks</p>
-
-    <div class="links">
-      <a href="https://scholar.google.com/citations?user=pDZcIpoAAAAJ&hl=en" target="_blank">Scholar</a>
-      <a href="mailto:cs20s038@cse.iitm.ac.in">Email</a>
+    <div class="nav-links">
+      <a href="mailto:rahulver551@gmail.com">Email</a> /
+      <a href="https://scholar.google.com/citations?user=pDZcIpoAAAAJ&hl=en" target="_blank">Scholar</a> /
       <a href="https://www.linkedin.com/in/rahul-verma-403060148/" target="_blank">LinkedIn</a>
+    </div>
+    <div class="header-bio-row">
+      <div class="header-bio">
+        <p>
+          I am a Senior Software Engineer at <a href="https://www.cisco.com" target="_blank">Cisco Systems</a>
+          and an AI/ML researcher working across the intelligence layer — foundation models, LLMs, agentic reasoning —
+          and the systems layer — network orchestration, GPU computing, and low-latency infrastructure.
+          My interests span <strong>multimodal AI</strong>, <strong>distributed and federated machine learning</strong>,
+          <strong>agentic AI</strong>, and <strong>AI for networked systems</strong>.
+        </p>
+        <p>
+          I completed my MS by Research in Computer Science
+          (advisor: <a href="http://www.cse.iitm.ac.in/~skrishnam/Research.html" target="_blank">Prof. Krishna Moorthy Sivalingam</a>)
+          from the <a href="https://www.iitm.ac.in" target="_blank">Indian Institute of Technology (IIT) Madras</a>,
+          funded by the <strong>VMware University Research Fund, USA</strong>,
+          resulting in three peer-reviewed IEEE publications on federated learning for 5G network orchestration.
+          I secured <strong>All India Rank 502</strong> in GATE CS 2020 and was selected for the <strong>Amazon ML Summer School 2022</strong>.
+        </p>
+        <p>
+          I am actively seeking a <strong>PhD position</strong> at a top US university
+          to advance research at the intersection of multimodal foundation models, agentic AI, and distributed intelligent systems.
+        </p>
+      </div>
+      <img src="Rahul.jpeg" alt="Rahul Verma" class="profile-photo"/>
     </div>
   </header>
 
+  <!-- ── Research Interests ─────────────────────────────── -->
   <section>
-    <h2>About Me</h2>
+    <h2>Research Interests</h2>
+    <hr/>
     <p>
-      I am a Software Engineer at Cisco with a strong background in ML systems,
-      federated learning, and computer networks. I completed my MS (by Research)
-      in Computer Science from IIT Madras, focusing on 5G network slicing,
-      VNF orchestration, and federated deep learning.
+      Multimodal AI &nbsp;·&nbsp;
+      Distributed &amp; Federated Machine Learning &nbsp;·&nbsp;
+      Agentic AI Systems &nbsp;·&nbsp;
+      AI/ML for Networks &amp; Infrastructure &nbsp;·&nbsp;
+      Foundation Models &amp; LLMs &nbsp;·&nbsp;
+      GPU-Accelerated Computing
     </p>
   </section>
 
+  <!-- ── Education ──────────────────────────────────────── -->
   <section>
     <h2>Education</h2>
-    <ul>
-      <li><b>IIT Madras</b> — MS (Research), Computer Science (2020–2023)</li>
-      <li><b>Terna Engineering College</b> — BE, Information Technology (2014–2018)</li>
+    <hr/>
+    <ul class="entry-list">
+
+      <li>
+        <div class="entry-header">
+          <span class="entry-org">Indian Institute of Technology Madras</span>
+          <span class="entry-date">Sep 2020 – Jun 2023</span>
+        </div>
+        <div class="entry-role">MS (by Research), Computer Science &amp; Engineering &mdash; CGPA 8.76</div>
+        <div class="entry-desc">
+          Thesis: Federated Learning for VNF auto-scaling and placement in 5G-and-beyond networks.<br/>
+          Advisor: <a href="http://www.cse.iitm.ac.in/~skrishnam/Research.html" target="_blank">Prof. Krishna Moorthy Sivalingam</a>.
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-header">
+          <span class="entry-org">Terna Engineering College, Mumbai University</span>
+          <span class="entry-date">Jun 2014 – May 2018</span>
+        </div>
+        <div class="entry-role">B.E., Information Technology &mdash; CGPA 8.67</div>
+      </li>
+
     </ul>
   </section>
 
+  <!-- ── Industry Experience ────────────────────────────── -->
   <section>
-    <h2>Research</h2>
-    <ul>
+    <h2>Industry Experience</h2>
+    <hr/>
+    <ul class="entry-list">
+
       <li>
-        <b>VMware University Research Fund</b><br/>
-        Federated learning for VNF auto-scaling and placement in multi-domain 5G networks.
+        <div class="entry-header">
+          <span class="entry-org">Cisco Systems</span>
+          <span class="entry-date">August 2024 – Present</span>
+        </div>
+        <div class="entry-role">Software Engineer, Grade 08</div>
+        <div class="entry-desc">
+          <ul>
+            <li>Worked on <strong>Linux kernel–level systems</strong> and <strong>eBPF-based monitoring</strong> for fast vulnerability mitigation and system observability.</li>
+            <li>Implemented <strong>IEEE 802.1Qbu TSN Frame Preemption</strong> on Cisco Industrial Ethernet 9000 — including firmware changes, QoS integration, and per-port CLI configuration enabling high-priority traffic to preempt non-critical frames.</li>
+            <li>Developed <strong>PoE features</strong>, firmware boot-time upgrades, and enforced <strong>SELinux security policies</strong>.</li>
+            <li>Built an <strong>LLM-driven automated code review platform</strong> with data-centric feedback loops to continuously improve code quality at scale.</li>
+          </ul>
+        </div>
       </li>
+
       <li>
-        <b>GPU Programming</b><br/>
-        Implemented a simplified DUCATI architecture to improve GPU TLB efficiency.
+        <div class="entry-header">
+          <span class="entry-org">OPLUS India R&amp;D (OPPO / OnePlus)</span>
+          <span class="entry-date">July 2023 – August 2024</span>
+        </div>
+        <div class="entry-role">Engineer L3</div>
+        <div class="entry-desc">
+          <ul>
+            <li>Developed a <strong>Magic Eraser–style generative AI feature</strong> for intelligent object removal and background synthesis on-device.</li>
+            <li>Built <strong>ML-based failure detection</strong> pipelines and LLM-assisted log analysis for accelerated root-cause identification.</li>
+          </ul>
+        </div>
       </li>
+
+      <li>
+        <div class="entry-header">
+          <span class="entry-org">Tata Consultancy Services</span>
+          <span class="entry-date">July 2018 – September 2020</span>
+        </div>
+        <div class="entry-role">System Analyst</div>
+        <div class="entry-desc">
+          <ul>
+            <li>Developed enterprise distributed applications with <strong>ML-ready data interfaces</strong> for predictive analytics and scalable automation workflows.</li>
+          </ul>
+        </div>
+      </li>
+
     </ul>
   </section>
 
+  <!-- ── Research Experience ────────────────────────────── -->
   <section>
-    <h2>Publications</h2>
-    <ul>
+    <h2>Research Experience</h2>
+    <hr/>
+    <ul class="entry-list">
+
       <li>
-        IEEE CloudNet 2022 — Federated Learning for VNF Auto-scaling
+        <div class="entry-header">
+          <span class="entry-org">VMware University Research Fund, USA &nbsp;·&nbsp; IIT Madras</span>
+          <span class="entry-date">June 2021 – May 2023</span>
+        </div>
+        <div class="entry-role">
+          Research Associate &nbsp;|&nbsp;
+          Advisor: <a href="http://www.cse.iitm.ac.in/~skrishnam/Research.html" target="_blank">Prof. Krishna Moorthy Sivalingam</a>
+        </div>
+        <div class="entry-desc">
+          <ul>
+            <li>Designed a <strong>federated learning framework</strong> for VNF auto-scaling in multi-domain 5G networks using LSTM/GRU forecasting and Time-GAN synthetic data generation, preserving privacy across network domains.</li>
+            <li>Developed a <strong>federated deep learning system</strong> for dynamic VNF placement in multi-cloud environments; validated on synthetic and real-world datasets with measurable reduction in over/under-allocation.</li>
+            <li>Program: <em>"Orchestration for network slicing in 5G networks using SDN/NFV."</em></li>
+          </ul>
+        </div>
       </li>
+
+      <!-- Publications nested under VMware -->
+      <li class="pub-sublist">
+        <div class="pub-sublabel">Publications</div>
+        <ul class="pub-list pub-list-indent">
+
+          <li>
+            <div class="pub-content">
+              <a class="pub-title" href="https://doi.org/10.1109/ACCESS.2024.3458437" target="_blank">
+                Design and Analysis of VNF Scaling Mechanisms for 5G-and-Beyond Networks using Federated Learning
+              </a>
+              <p class="pub-meta">
+                <em>Rahul Verma, Krishna M. Sivalingam, and Omkar Chavan</em><br/>
+                <strong>IEEE Access</strong>, vol. 12, pp. 129826–129843, Sep. 2024
+              </p>
+              <div class="pub-links"><a href="https://doi.org/10.1109/ACCESS.2024.3458437" target="_blank">paper</a></div>
+            </div>
+          </li>
+
+          <li>
+            <div class="pub-content">
+              <span class="pub-title-plain">VNF Placement based on Resource Usage Prediction using Federated Deep Learning Techniques</span>
+              <p class="pub-meta">
+                <em>Rahul Verma, Krishna M. Sivalingam, and Omkar Chavan</em><br/>
+                <strong>IEEE Future Networks World Forum (FNWF)</strong>, Baltimore, USA, 2023
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="pub-content">
+              <span class="pub-title-plain">Federated Learning approach for Auto-scaling of VNF Resource Allocation in 5G-and-Beyond Networks</span>
+              <p class="pub-meta">
+                <em>Rahul Verma and Krishna M. Sivalingam</em><br/>
+                <strong>IEEE 11th International Conference on Cloud Networking (CloudNet)</strong>, pp. 242–246, 2022
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </li>
+
       <li>
-        IEEE FNWF 2023 — VNF Placement using Federated Deep Learning
+        <div class="entry-header">
+          <span class="entry-org">Teaching Assistant &nbsp;·&nbsp; IIT Madras</span>
+          <span class="entry-date">Apr – Jun 2021</span>
+        </div>
+        <div class="entry-role">CS1111: Problem Solving Using Computers</div>
+        <div class="entry-desc">
+          Conducted labs, held office hours, and graded assignments for an undergraduate programming course.
+        </div>
       </li>
-      <li>
-        IEEE Access 2024 —
-        <a href="https://doi.org/10.1109/ACCESS.2024.3458437" target="_blank">DOI</a>
-      </li>
+
     </ul>
   </section>
 
+  <!-- ── Cisco Projects ─────────────────────────────────── -->
   <section>
-    <h2>Work Experience</h2>
-    <ul>
+    <h2>Projects <span class="section-sub">— Cisco Systems</span></h2>
+    <hr/>
+    <ul class="project-list">
+
       <li>
-        <b>Cisco Systems</b> — Software Engineer (2024–Present)<br/>
-        LLM-based automated code review, FPGA-assisted low-latency networking.
+        <div class="proj-title">IEEE 802.1Qbu TSN Frame Preemption — Cisco Industrial Ethernet 9000</div>
+        <div class="proj-meta">Cisco Systems · 2024 – Present</div>
+        <div class="proj-desc">
+          Time-Sensitive Networking requires high-priority frames to preempt in-flight non-critical traffic
+          with microsecond-level latency guarantees — a capability that demands tight co-design across
+          firmware, OS, and network stack.
+          Implemented end-to-end TSN preemption support: platform firmware changes, QoS integration
+          for handling express and preempted traffic queues, per-port CLI configuration,
+          and an auto-enable mechanism that activates preemption only when both link endpoints
+          negotiate support. Validated on Cisco IE9000 industrial switch platforms.
+        </div>
       </li>
+
       <li>
-        <b>OPLUS (OPPO / OnePlus)</b> — Engineer L3<br/>
-        AI-driven mobile features and ML-based diagnostics.
+        <div class="proj-title">AI-Powered Automated Code Review Platform</div>
+        <div class="proj-meta">Cisco Systems · 2024 – Present</div>
+        <div class="proj-desc">
+          At scale, manual code review misses subtle bugs, security issues, and cross-file regressions —
+          especially when a change in one module silently breaks a dependency elsewhere.
+          Built a system where specialized LLM agents independently analyze each PR for bugs, security,
+          performance, and maintainability, grounded by retrieval over
+          <strong>code knowledge graphs and semantic embeddings</strong> to reason across file boundaries.
+          Agent findings are aggregated with static analysis signals and ranked by confidence;
+          a developer feedback loop retrains the ranking model over time.
+        </div>
       </li>
+
       <li>
-        <b>TCS</b> — System Analyst<br/>
-        Distributed systems and data-centric ML workflows.
+        <div class="proj-title">Graph RAG Agent for Network PHY/Port Debugging</div>
+        <div class="proj-meta">Cisco Systems · 2024 – Present</div>
+        <div class="proj-desc">
+          PHY/port issues — link flaps, CRC bursts, SFP failures — rarely have a single-source root cause;
+          diagnosis requires correlating CLI outputs, driver logs, transceiver metrics, and hardware errata
+          across the full Port → PHY → SerDes → ASIC stack.
+          Built a <strong>Graph RAG system</strong> that models these hardware dependencies as a knowledge graph,
+          enabling an LLM agent to traverse causal paths and pinpoint likely failure points
+          rather than returning semantically similar documents.
+          Reduced average triage time from ~60 to ~5 minutes for complex PHY faults.
+        </div>
       </li>
+
     </ul>
   </section>
 
+  <!-- ── University Projects ────────────────────────────── -->
   <section>
-    <h2>Skills</h2>
-    <p>
-      C/C++, CUDA, Python, Java · ML · Federated Learning · LLMs ·
-      OS · GPU Programming · AWS · Kubernetes
-    </p>
+    <h2>Projects <span class="section-sub">— University &amp; Academic</span></h2>
+    <hr/>
+    <ul class="project-list">
+
+      <li>
+        <div class="proj-title">Extractive Question Answering with DistilBERT <span class="proj-course">(Deep Learning, CPSC-8430)</span></div>
+        <div class="proj-desc">
+          Fine-tuned <strong>DistilBERT</strong> on SpokenSQuAD for extractive QA.
+          Applied Linear LR Decay and Automatic Mixed Precision (AMP) as performance enhancements,
+          improving test F1 from <strong>52.25 → 54.05</strong>.
+        </div>
+      </li>
+
+      <li>
+        <div class="proj-title">GAN Comparison: DCGAN vs. WGAN vs. ACGAN on CIFAR-10 <span class="proj-course">(Deep Learning, CPSC-8430)</span></div>
+        <div class="proj-desc">
+          Implemented and benchmarked three GAN architectures for image generation evaluated by FID score.
+          DCGAN achieved best FID of <strong>206.19</strong> (vs. WGAN 259.59, ACGAN 281.99),
+          outperforming all variants across 40 epochs.
+        </div>
+      </li>
+
+      <li>
+        <div class="proj-title">GPU TLB Optimization: DUCATI Architecture <span class="proj-course">(GPU Programming, IIT Madras)</span></div>
+        <div class="proj-desc">
+          Implemented a simplified <strong>DUCATI</strong> architecture to extend TLB reach in GPU-accelerated systems using Macsim.
+          Demonstrated fewer TLB evictions than the baseline on GPU workloads (benchmarked via vector_add);
+          CPU-side validated using merge sort.
+        </div>
+      </li>
+
+      <li>
+        <div class="proj-title">Router Architectures and Algorithms <span class="proj-course">(CS6040, IIT Madras)</span></div>
+        <div class="proj-desc">
+          Python circuit switching and packet processing simulators; IPv4 classification using Set Pruning Trie.
+        </div>
+      </li>
+
+      <li>
+        <div class="proj-title">Pattern Recognition and Machine Learning <span class="proj-course">(CS5691, IIT Madras)</span></div>
+        <div class="proj-desc">
+          Implemented regression, k-NN, Naive Bayes, SVM, and MLFFNN from scratch for image classification.
+        </div>
+      </li>
+
+      <li>
+        <div class="proj-title">Computer Architecture <span class="proj-course">(CS6600, IIT Madras)</span></div>
+        <div class="proj-desc">
+          MESI cache coherence protocol simulation; SIMD intrinsics for accelerated image processing; Cachegrind-based matrix multiplication analysis.
+        </div>
+      </li>
+
+    </ul>
   </section>
 
+  <!-- ── Achievements ────────────────────────────────────── -->
+  <section>
+    <h2>Achievements &amp; Recognition</h2>
+    <hr/>
+    <ul class="ach-list">
+      <li><strong>All India Rank 502</strong> in GATE Computer Science 2020 (97,481 candidates).</li>
+      <li>Selected for <strong>Amazon ML Summer School 2022</strong>.</li>
+      <li>Recipient, <strong>Late Dr. Smt. Chandrakaladevi Padmasinha Patil Scholarship</strong> for outstanding academic performance.</li>
+      <li>Recipient, <strong>Tata Trust Scholarship</strong> for excellent academic performance.</li>
+      <li>Completed <strong>Deep Learning Specialization</strong> — Andrew Ng, Coursera (2021).</li>
+    </ul>
+  </section>
+
+  <!-- ── Skills ──────────────────────────────────────────── -->
+  <section>
+    <h2>Technical Skills</h2>
+    <hr/>
+    <div class="skills-grid">
+      <p><strong>Languages:</strong> C/C++, CUDA, Python, Java</p>
+      <p><strong>AI / ML:</strong> Federated Learning, Distributed ML, LLMs, Multimodal Models, Agentic AI, Deep Learning, GANs, Transformers</p>
+      <p><strong>Frameworks &amp; Tools:</strong> PyTorch, Hugging Face Transformers, Flask, Spring Boot, Git</p>
+      <p><strong>Data &amp; Search:</strong> SQL, MongoDB, Elasticsearch, Milvus, Weaviate</p>
+      <p><strong>Graph &amp; Knowledge:</strong> Neo4j, Knowledge Graphs, RAG, Graph RAG</p>
+      <p><strong>Cloud &amp; Platforms:</strong> AWS, Kubernetes, Docker</p>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
   <footer>
-    <p>© 2026 Rahul Verma</p>
+    <p>© 2026 Rahul Verma &nbsp;·&nbsp; <a href="mailto:rahulver551@gmail.com">rahulver551@gmail.com</a></p>
   </footer>
 
 </div>
-
 </body>
 </html>
