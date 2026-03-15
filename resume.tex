@@ -1,0 +1,144 @@
+% chktex-file 8
+\documentclass{resume}
+\usepackage[colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue]{hyperref}
+\geometry{a4paper, margin=0.2in}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{Rahul Verma}
+\details{\href{https://scholar.google.com/citations?user=pDZcIpoAAAAJ&hl=en}{Google Scholar}%
+}{\href{mailto:rahulver551@gmail.com}{rahulver551@gmail.com}}
+{\href{https://www.linkedin.com/in/rahul-verma-403060148/}{LinkedIn}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\education{Indian Institute of Technology Madras}{September 2020 -- June 2023}{MS (by Research), Computer Science \& Engineering}{CGPA: 8.76}
+\education{Terna Engineering College}{June 2014 -- May 2018}{Bachelor of Engineering, Information Technology}{CGPA: 8.67}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work Experience}
+
+\workex{Cisco Systems}{August 2024 -- Present}{Software Engineer (Grade 08)}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Worked on \textbf{Linux kernel-level systems} and \textbf{eBPF-based monitoring} for fast vulnerability mitigation and system observability.
+    \item Implemented \textbf{IEEE 802.1Qbu TSN Frame Preemption} on Cisco Industrial Ethernet 9000 --- including platform firmware changes, QoS integration for express and preempted traffic queues, and per-port CLI with auto-enable negotiation.
+    \item Developed \textbf{PoE features}, firmware boot-time upgrades, and enforced \textbf{SELinux security policies}.
+    \item Built an \textbf{LLM-driven automated code review platform} with data-centric feedback loops and Chain-of-Thought reasoning to improve code quality at scale.
+    \item Designed a \textbf{Graph RAG agent} for automated PHY/port root-cause analysis, combining hardware dependency knowledge graphs with LLM reasoning to reduce engineer triage time from $\sim$60 to $\sim$5 minutes.
+\end{itemize}
+
+\workex{OPLUS India R\&D (OPPO / OnePlus)}{July 2023 -- August 2024}{Engineer L3}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Contributed to AI-driven mobile features, including a \textbf{Magic Eraser-like tool} using generative ML models for intelligent object removal and background synthesis.
+    \item Built structured data pipelines for \textbf{ML-based failure detection} and predictive diagnostics.
+    \item Implemented \textbf{lightweight ML and LLM-assisted log analysis} to accelerate root-cause identification.
+\end{itemize}
+
+\workex{Tata Consultancy Services}{July 2018 -- September 2020}{System Analyst}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Developed \textbf{enterprise-scale distributed applications} and \textbf{ML-ready data interfaces} for predictive analytics.
+    \item Designed \textbf{data-centric ML workflows} to support scalable automation and insight generation.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Experience}
+
+\workex{VMware University Research Fund, USA $\cdot$ IIT Madras}{June 2021 -- May 2023}{Research Associate $|$ Advisor: \href{http://www.cse.iitm.ac.in/~skrishnam/Research.html}{Prof. Krishna Moorthy Sivalingam}}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Research program: \textit{``Orchestration for network slicing in 5G networks based on SDN/NFV concepts --- design and implementation.''}
+    \item Designed a \textbf{federated learning framework} for VNF auto-scaling in multi-domain 5G networks using \textbf{LSTM/GRU} for time-series forecasting and \textbf{Time-GAN} for synthetic data generation, preserving domain-level privacy without sharing raw network telemetry.
+    \item Developed a \textbf{federated deep learning system} for dynamic VNF placement in multi-cloud environments; validated on synthetic and real-world datasets with measurable reduction in over- and under-allocation.
+    \item Work resulted in \textbf{3 peer-reviewed IEEE publications} (CloudNet 2022, FNWF 2023, IEEE Access 2024).
+\end{itemize}
+
+\workex{IIT Madras}{April 2021 -- June 2021}{Teaching Assistant --- CS1111: Problem Solving Using Computers}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Conducted labs, held office hours, and graded assignments for an undergraduate programming course.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+{\small Full list: \href{https://scholar.google.com/citations?user=pDZcIpoAAAAJ&hl=en}{Google Scholar}}
+\begin{itemize}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
+    \item Rahul Verma and Krishna M. Sivalingam. ``Federated Learning approach for Auto-scaling of Virtual Network Function resource allocation in 5G-and-Beyond Networks.'' 2022 IEEE 11th \textbf{International Conference on Cloud Networking (CloudNet)}, pp. 242--246.
+    \item Rahul Verma, Krishna M. Sivalingam, and Omkar Chavan. ``VNF Placement based on Resource Usage Prediction using Federated Deep Learning Techniques.'' 2023 \textbf{IEEE Future Networks World Forum (FNWF)}, Baltimore, USA.
+    \item Rahul Verma, Krishna M. Sivalingam, and Omkar Chavan. ``Design and Analysis of VNF Scaling Mechanisms for 5G-and-Beyond Networks using Federated Learning.'' \textbf{IEEE Access}, vol. 12, pp. 129826--129843, Sep. 2024. DOI: \href{https://doi.org/10.1109/ACCESS.2024.3458437}{10.1109/ACCESS.2024.3458437}.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\subsection{Cisco Systems}
+
+\workex{IEEE 802.1Qbu TSN Frame Preemption}{}{Cisco Industrial Ethernet 9000}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Implemented low-latency preemption for time-critical frames, enabling high-priority traffic to preempt non-critical frames mid-transmission on the IE9000 platform.
+    \item Developed end-to-end system support: platform firmware changes, CLI extensions, and QoS integration for express and preempted traffic queues.
+    \item Built per-port CLI and auto-enable mechanism, activating preemption only when both link endpoints negotiate support.
+\end{itemize}
+
+\workex{AI-Powered Automated Code Review Platform}{}{}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item At scale, manual code review misses subtle bugs and cross-file regressions. Built a system where specialized LLM agents independently analyze each PR for bugs, security, performance, and maintainability, grounded by retrieval over \textbf{code knowledge graphs} and \textbf{semantic embeddings} for cross-file reasoning.
+    \item Confidence-weighted aggregation merges agent findings with static analysis signals; a developer feedback loop retrains the ranking model over time.
+\end{itemize}
+
+\workex{Graph RAG Agent for PHY/Port Debugging}{}{}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Diagnosing PHY/port issues --- link flaps, CRC bursts, SFP failures --- requires correlating CLI outputs, driver logs, transceiver metrics, and hardware errata across the full Port $\rightarrow$ PHY $\rightarrow$ SerDes $\rightarrow$ ASIC stack; root cause rarely appears in a single source.
+    \item Built a \textbf{Graph RAG system} that models hardware dependencies as a knowledge graph with causal edges (e.g.\ \textit{CRC Error $\rightarrow$ SerDes Degradation $\rightarrow$ debug command}), enabling an LLM agent to traverse dependency paths rather than retrieve semantically similar documents.
+    \item Parses CLI outputs (\texttt{show interface}, \texttt{show controllers}, \texttt{show interface transceiver}) via TextFSM into structured entities; synthesizes graph traversal results with retrieved documentation for human-readable root-cause analysis.
+    \item Reduced average engineer triage time from $\sim$60 minutes to $\sim$5 minutes for complex PHY faults.
+\end{itemize}
+
+\subsection{University \& Academic}
+
+\workex{GPU TLB Optimization: DUCATI Architecture}{}{IIT Madras}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Implemented a simplified \textbf{DUCATI} architecture (\textit{``High-performance Address Translation by Extending TLB Reach of GPU-accelerated Systems''}) to address TLB inefficiencies using Macsim.
+    \item Benchmarked CPU workloads (merge sort) and GPU workloads (vector\_add); demonstrated fewer TLB evictions than the baseline on GPU workloads.
+\end{itemize}
+
+\workex{Extractive Question Answering with DistilBERT}{}{}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Fine-tuned \textbf{DistilBERT} on SpokenSQuAD for extractive QA; applied Linear LR Decay and Automatic Mixed Precision (AMP), improving test F1 from \textbf{52.25 $\rightarrow$ 54.05}.
+\end{itemize}
+
+\workex{GAN Comparison: DCGAN vs.\ WGAN vs.\ ACGAN on CIFAR-10}{}{}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Implemented and benchmarked three GAN architectures evaluated by FID score; DCGAN achieved best FID of \textbf{206.19} (vs.\ WGAN 259.59, ACGAN 281.99) across 40 epochs.
+\end{itemize}
+
+\workex{Router Architectures and Algorithms --- CS6040}{}{IIT Madras}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Python circuit switching and packet processing simulators; IPv4 packet classification using Set Pruning Trie.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Scholastic Achievements}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Secured \textbf{All India Rank 502} in GATE Computer Science 2020 out of 97,481 candidates.
+    \item Selected for \textbf{Amazon ML Summer School 2022}.
+    \item Recipient of the \textbf{Late Dr. Smt. Chandrakaladevi Padmasinha Patil Scholarship} for outstanding academic performance.
+    \item Recipient of the \textbf{Tata Trust Scholarship} for excellent academic performance.
+    \item Completed \textbf{Deep Learning Specialization} --- Andrew Ng, Coursera (2021).
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Courses and Skills}
+\noindent
+\begin{tabular}{l | p{11cm}}
+\textbf{Coursework} &
+\begin{minipage}[t]{\linewidth}
+Data Structures \& Algorithms, Operating Systems, System Design, Databases, Computer Networks, GPU Programming, Linear Algebra, Random Processes, Machine Learning, Deep Learning, Federated Learning, Large Language Models (LLMs)
+\end{minipage} \\[6pt]
+\textbf{Programming Languages} & C/C++, CUDA, Python, Java \\[2pt]
+\textbf{AI / ML} & Federated Learning, Distributed ML, LLMs, Multimodal Models, Agentic AI, GANs, Transformers \\[2pt]
+\textbf{Frameworks \& Tools} & PyTorch, Hugging Face Transformers, Flask, Spring Boot, Git \\[2pt]
+\textbf{Data \& Search} & SQL, MongoDB, Elasticsearch, Milvus, Neo4j \\[2pt]
+\textbf{Cloud \& Platforms} & AWS, Kubernetes, Docker \\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
