@@ -66,8 +66,8 @@ header h1 {
 }
 
 .profile-photo {
-  width: 190px;
-  height: 240px;
+  width: 220px;
+  height: 275px;
   object-fit: cover;
   object-position: top center;
   flex-shrink: 0;
