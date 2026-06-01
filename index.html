@@ -74,6 +74,7 @@
   <section>
     <h2>Education</h2>
     <hr/>
+    <h3 style="display:none;">Academic Timeline</h3>
     <ul class="entry-list">
 
       <li>
@@ -103,6 +104,7 @@
   <section>
     <h2>Industry Experience</h2>
     <hr/>
+    <h3 style="display:none;">Professional Timeline</h3>
     <ul class="entry-list">
 
       <li>
@@ -116,6 +118,7 @@
             <li>Worked on <strong>Linux kernel–level systems</strong> and <strong>eBPF-based monitoring</strong> for fast vulnerability mitigation and system observability.</li>
             <li>Implemented <strong>IEEE 802.1Qbu TSN Frame Preemption</strong> on Cisco Industrial Ethernet 9000 — including firmware changes, QoS integration, and per-port CLI configuration enabling high-priority traffic to preempt non-critical frames.</li>
             <li>Developed <strong>PoE features</strong>, firmware boot-time upgrades, and enforced <strong>SELinux security policies</strong>.</li>
+            <li>Designed and deployed an <strong>edge-native AI hardware power fingerprinting pipeline</strong> via the <strong>Cisco IOx (Docker)</strong> framework, training an unsupervised <strong>Isolation Forest</strong> model on Layer 1 PoE telemetry ($mW$, $mA$, voltage stability) to detect malicious device swaps and execute automated closed-loop port isolation.</li>
             <li>Built an <strong>LLM-driven automated code review platform</strong> with data-centric feedback loops to continuously improve code quality at scale.</li>
             <li>Designed a <strong>Graph RAG agent</strong> for automated PHY/port root-cause analysis, combining hardware dependency knowledge graphs with LLM reasoning to reduce engineer triage time from ~60 to ~5 minutes.</li>
           </ul>
@@ -156,6 +159,7 @@
   <section>
     <h2>Research Experience</h2>
     <hr/>
+    <h3 style="display:none;">Academic Fellowships</h3>
     <ul class="entry-list">
 
       <li>
@@ -238,6 +242,15 @@
     <ul class="project-list">
 
       <li>
+        <div class="proj-title">Edge AI Hardware Power Fingerprinting &amp; Attestation Pipeline</div>
+        <div class="proj-meta">Cisco Systems · 2024 – Present</div>
+        <div class="proj-desc">
+          Enterprise physical perimeters are highly vulnerable to layer-1 hardware-swap attacks (e.g., swapping an authorized IP camera with an attacker's malicious device). While logical identifiers like MAC and LLDP layers are easily spoofed, the baseline physical consumption footprint cannot be easily simulated.
+          Architected and deployed an edge-native, unsupervised Machine Learning pipeline hosted natively within Cisco Industrial Ethernet switches using the <strong>Cisco IOx</strong> application framework. Engineered a local telemetry module to programmatically ingest real-time physical PoE data vectors ($mW$ consumption, current $mA$, and voltage stability profiles) from active switch ports via internal <code>AppGigabitEthernet</code> processing loops. Trained an unsupervised <strong>Isolation Forest</strong> model in Python to profile distinct hardware identities, reliably flagging unauthorized hardware replacements and hidden malware execution behavior. Implemented closed-loop mitigation by scripting the containerized application to programmatically inject automated port interface shutdown routines upon high-confidence anomalies, isolating threats instantly at the network edge.
+        </div>
+      </li>
+
+      <li>
         <div class="proj-title">IEEE 802.1Qbu TSN Frame Preemption — Cisco Industrial Ethernet 9000</div>
         <div class="proj-meta">Cisco Systems · 2024 – Present</div>
         <div class="proj-desc">
@@ -247,7 +260,7 @@
           Implemented end-to-end TSN preemption support: platform firmware changes, QoS integration
           for handling express and preempted traffic queues, per-port CLI configuration,
           and an auto-enable mechanism that activates preemption only when both link endpoints
-          negotiate support. Validated on Cisco IE9000 industrial switch platforms.
+          negoti support. Validated on Cisco IE9000 industrial switch platforms.
         </div>
       </li>
 
@@ -358,8 +371,8 @@
     <hr/>
     <div class="skills-grid">
       <p><strong>Languages:</strong> C/C++, CUDA, Python, Java</p>
-      <p><strong>AI / ML:</strong> Federated Learning, Distributed ML, LLMs, Multimodal Models, Agentic AI, Deep Learning, GANs, Transformers</p>
-      <p><strong>Frameworks &amp; Tools:</strong> PyTorch, Hugging Face Transformers, Flask, Spring Boot, Git</p>
+      <p><strong>AI / ML:</strong> Machine Learning, Deep Learning, Federated Learning, Distributed ML, LLMs, Isolation Forest, Multimodal Models, Agentic AI, GANs, Transformers</p>
+      <p><strong>Frameworks &amp; Tools:</strong> PyTorch, Hugging Face Transformers, Cisco IOx, Flask, Spring Boot, Git</p>
       <p><strong>Data &amp; Search:</strong> SQL, MongoDB, Elasticsearch, Milvus, Weaviate</p>
       <p><strong>Graph &amp; Knowledge:</strong> Neo4j, Knowledge Graphs, RAG, Graph RAG</p>
       <p><strong>Cloud &amp; Platforms:</strong> AWS, Kubernetes, Docker</p>
