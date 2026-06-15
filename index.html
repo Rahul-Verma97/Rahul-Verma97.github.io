@@ -48,8 +48,7 @@
           I secured <strong>All India Rank 502</strong> in GATE CS 2020 and was selected for the <strong>Amazon ML Summer School 2022</strong>.
         </p>
         <p>
-          I am actively seeking a <strong>PhD position</strong> at a top US university
-          to advance research at the intersection of multimodal foundation models, agentic AI, and distributed intelligent systems.
+          Driven by a commitment to next-generation AI, I am actively seeking a <strong>PhD position</strong> to advance research at the intersection of multimodal foundation models, agentic reasoning, and distributed intelligent systems.
         </p>
       </div>
       <img src="Rahul.jpeg" alt="Rahul Verma" class="profile-photo"/>
@@ -118,9 +117,10 @@
             <li>Worked on <strong>Linux kernel–level systems</strong> and <strong>eBPF-based monitoring</strong> for fast vulnerability mitigation and system observability.</li>
             <li>Implemented <strong>IEEE 802.1Qbu TSN Frame Preemption</strong> on Cisco Industrial Ethernet 9000 — including firmware changes, QoS integration, and per-port CLI configuration enabling high-priority traffic to preempt non-critical frames.</li>
             <li>Developed <strong>PoE features</strong>, firmware boot-time upgrades, and enforced <strong>SELinux security policies</strong>.</li>
-            <li>Designed and deployed an <strong>edge-native AI hardware power fingerprinting pipeline</strong> via the <strong>Cisco IOx (Docker)</strong> framework, training an unsupervised <strong>Isolation Forest</strong> model on Layer 1 PoE telemetry ($mW$, $mA$, voltage stability) to detect malicious device swaps and execute automated closed-loop port isolation.</li>
+            <li>Designed and deployed an <strong>edge-native AI hardware power fingerprinting pipeline</strong> via the <strong>Cisco IOx (Docker)</strong> framework, training an unsupervised <strong>Isolation Forest</strong> model on Layer 1 PoE telemetry (mW, mA, voltage stability) to detect malicious device swaps and execute automated closed-loop port isolation.</li>
             <li>Built an <strong>LLM-driven automated code review platform</strong> with data-centric feedback loops to continuously improve code quality at scale.</li>
             <li>Designed a <strong>Graph RAG agent</strong> for automated PHY/port root-cause analysis, combining hardware dependency knowledge graphs with LLM reasoning to reduce engineer triage time from ~60 to ~5 minutes.</li>
+            <li>Engineered an automated vulnerability context enrichment engine for <strong>Cisco Cyber Vision</strong>, transforming static NVD CVE data into device-specific risk profiles by cross-referencing asset configurations, active protocol services, and ISA/IEC 62443 zone positioning.</li>
           </ul>
         </div>
       </li>
@@ -200,21 +200,27 @@
 
           <li>
             <div class="pub-content">
-              <span class="pub-title-plain">VNF Placement based on Resource Usage Prediction using Federated Deep Learning Techniques</span>
+              <a class="pub-title" href="https://scholar.google.com/citations?user=pDZcIpoAAAAJ&hl=en" target="_blank">
+                VNF Placement based on Resource Usage Prediction using Federated Deep Learning Techniques
+              </a>
               <p class="pub-meta">
                 <em>Rahul Verma, Krishna M. Sivalingam, and Omkar Chavan</em><br/>
                 <strong>IEEE Future Networks World Forum (FNWF)</strong>, Baltimore, USA, 2023
               </p>
+              <div class="pub-links"><a href="https://scholar.google.com/citations?user=pDZcIpoAAAAJ&hl=en" target="_blank">scholar</a></div>
             </div>
           </li>
 
           <li>
             <div class="pub-content">
-              <span class="pub-title-plain">Federated Learning approach for Auto-scaling of VNF Resource Allocation in 5G-and-Beyond Networks</span>
+              <a class="pub-title" href="https://scholar.google.com/citations?user=pDZcIpoAAAAJ&hl=en" target="_blank">
+                Federated Learning approach for Auto-scaling of VNF Resource Allocation in 5G-and-Beyond Networks
+              </a>
               <p class="pub-meta">
                 <em>Rahul Verma and Krishna M. Sivalingam</em><br/>
                 <strong>IEEE 11th International Conference on Cloud Networking (CloudNet)</strong>, pp. 242–246, 2022
               </p>
+              <div class="pub-links"><a href="https://scholar.google.com/citations?user=pDZcIpoAAAAJ&hl=en" target="_blank">scholar</a></div>
             </div>
           </li>
 
@@ -246,7 +252,7 @@
         <div class="proj-meta">Cisco Systems · 2024 – Present</div>
         <div class="proj-desc">
           Enterprise physical perimeters are highly vulnerable to layer-1 hardware-swap attacks (e.g., swapping an authorized IP camera with an attacker's malicious device). While logical identifiers like MAC and LLDP layers are easily spoofed, the baseline physical consumption footprint cannot be easily simulated.
-          Architected and deployed an edge-native, unsupervised Machine Learning pipeline hosted natively within Cisco Industrial Ethernet switches using the <strong>Cisco IOx</strong> application framework. Engineered a local telemetry module to programmatically ingest real-time physical PoE data vectors ($mW$ consumption, current $mA$, and voltage stability profiles) from active switch ports via internal <code>AppGigabitEthernet</code> processing loops. Trained an unsupervised <strong>Isolation Forest</strong> model in Python to profile distinct hardware identities, reliably flagging unauthorized hardware replacements and hidden malware execution behavior. Implemented closed-loop mitigation by scripting the containerized application to programmatically inject automated port interface shutdown routines upon high-confidence anomalies, isolating threats instantly at the network edge.
+          Architected and deployed an edge-native, unsupervised Machine Learning pipeline hosted natively within Cisco Industrial Ethernet switches using the <strong>Cisco IOx</strong> application framework. Engineered a local telemetry module to programmatically ingest real-time physical PoE data vectors (mW consumption, current mA, and voltage stability profiles) from active switch ports via internal <code>AppGigabitEthernet</code> processing loops. Trained an unsupervised <strong>Isolation Forest</strong> model in Python to profile distinct hardware identities, reliably flagging unauthorized hardware replacements and hidden malware execution behavior. Implemented closed-loop mitigation by scripting the containerized application to programmatically inject automated port interface shutdown routines upon high-confidence anomalies, isolating threats instantly at the network edge.
         </div>
       </li>
 
